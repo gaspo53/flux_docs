@@ -20,21 +20,43 @@ class DocumentForm extends BaseDocumentForm {
     $this->setValidator('description', new sfValidatorString(array('required' => true)));
 
     $this->setValidator('name', new sfValidatorString(array('required' => true)));
+//
+//    $this->setWidget('filename', new sfWidgetFormInputFileEditable(array(
+//                'edit_mode' => false,
+//                'with_delete' => false,
+//                'file_src' => '',
+//                    )
+//    ));
 
-    $this->setWidget('filename', new sfWidgetFormInputFileEditable(array(
-                'edit_mode' => false,
-                'with_delete' => false,
-                'file_src' => '',
-                    )
+//    $this->setValidator('filename', new sfValidatorFile(array(
+//                'max_size' => 500000,
+//                'path' => '/path/to/directory/where/you/wanna/store/it',
+//                'required' => true,
+//                'validated_file_class' => 'sfValidatedFileCustom'
+//                    )
+//    ));
+
+	$this->widgetSchema['filename'] = new sfWidgetFormInputFileEditable(array(
+      'label'     => 'Archivo',
+      'file_src'  => '/uploads/'.$this->getObject()->getFileName(),
+      'edit_mode' => !$this->isNew(),
+      'template'  => ((!$this->isNew()) && (trim($this->getObject()->getFileName()) != '')) ? '<div>%delete% Eliminar Archivo </div>' : '<div>%input%</div>',
     ));
 
-    $this->setValidator('filename', new sfValidatorFile(array(
-                'max_size' => 500000,
-                'path' => '/path/to/directory/where/you/wanna/store/it',
-                'required' => true,
-                'validated_file_class' => 'sfValidatedFileCustom'
-                    )
-    ));
+    $this->validatorSchema['filename'] = new sfValidatorFile(array(
+      'required'   => true,
+      'path'       => sfConfig::get('sf_upload_dir'),
+      'max_size'=>'3145728',
+      'validated_file_class' => 'sfValidatedFile',
+     ),
+      array(
+        'max_size' => 'Archivo demasiado grande (Máximo 3MB)',
+      ));
+ 
+    
+    
+    
+    
   }
 
 }

@@ -24,6 +24,7 @@ document:
     prefix_path:          /document
     column:               id
     with_wildcard_routes: true
+    with_show:           true
 
 document_type:
   class: sfDoctrineRouteCollection

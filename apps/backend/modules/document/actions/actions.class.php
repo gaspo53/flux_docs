@@ -13,4 +13,17 @@ require_once dirname(__FILE__).'/../lib/documentGeneratorHelper.class.php';
  */
 class documentActions extends autoDocumentActions
 {
+  public function executeDelete(sfWebRequest $request) {
+
+    $document = $this->getRoute()->getObject();
+    if (file_exists(sfConfig::get('sf_upload_dir') . DIRECTORY_SEPARATOR . $document->getFileName()))
+      unlink(sfConfig::get('sf_upload_dir') . DIRECTORY_SEPARATOR . $document->getFileName());
+
+    parent::executeDelete($request);
+  }
+  
+  public function executeShow(sfWebRequest $request){
+    
+  }
+
 }
