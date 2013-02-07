@@ -16,8 +16,8 @@ generator:
       fields:  ~
       list:    ~
       filter:
-        display: [created_at]
+        display: [name, user_id, created_at]
       form:    ~
       edit:    ~
       new:     
-        display: [name, filename, user_id, group_id]
+        display: [name, description, filename, user_id, group_id]

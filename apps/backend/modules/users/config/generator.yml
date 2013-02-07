@@ -14,8 +14,11 @@ generator:
     config:
       actions: ~
       fields:  ~
-      list:    ~
-      filter:  ~
+      list:
+        display: [first_name, last_name, username, email_address]
+      filter:
+        display: [first_name, last_name, username, email_address]
       form:    ~
       edit:    ~
-      new:     ~
+      new:
+        display: [username, first_name, last_name, email_address, password, groups_list]

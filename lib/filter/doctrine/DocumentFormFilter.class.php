@@ -12,13 +12,12 @@ class DocumentFormFilter extends BaseDocumentFormFilter
 {
   public function configure()
   {
-$this->setWidget('created_at',
-new sfWidgetFormJQueryDate(
-array(
-'config' => '{buttonText: "Choose Date"}',
-'date_widget' => new sfWidgetFormDate(array('format'=>'%month%%day%%year%'))
-)
-)
-);    
+    $this->setWidget('created_at', new sfWidgetFormJQueryDate(
+                    array(
+                        'config' => '{buttonText: "Choose Date"}',
+                        'date_widget' => new sfWidgetFormDate(array('format' => '%day%%month%%year%'))
+                    )
+            )
+    );
   }
 }

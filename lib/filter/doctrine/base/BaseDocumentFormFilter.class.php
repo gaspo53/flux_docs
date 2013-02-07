@@ -14,6 +14,7 @@ abstract class BaseDocumentFormFilter extends BaseFormFilterDoctrine
   {
     $this->setWidgets(array(
       'name'             => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'description'      => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'filename'         => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'user_id'          => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('sfGuardUser'), 'add_empty' => true)),
       'group_id'         => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('sfGuardGroup'), 'add_empty' => true)),
@@ -22,6 +23,7 @@ abstract class BaseDocumentFormFilter extends BaseFormFilterDoctrine
 
     $this->setValidators(array(
       'name'             => new sfValidatorPass(array('required' => false)),
+      'description'      => new sfValidatorPass(array('required' => false)),
       'filename'         => new sfValidatorPass(array('required' => false)),
       'user_id'          => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('sfGuardUser'), 'column' => 'id')),
       'group_id'         => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('sfGuardGroup'), 'column' => 'id')),
@@ -47,6 +49,7 @@ abstract class BaseDocumentFormFilter extends BaseFormFilterDoctrine
     return array(
       'id'               => 'Number',
       'name'             => 'Text',
+      'description'      => 'Text',
       'filename'         => 'Text',
       'user_id'          => 'ForeignKey',
       'group_id'         => 'ForeignKey',

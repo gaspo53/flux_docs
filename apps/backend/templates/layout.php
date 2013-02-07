@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">  
   <head>
     <?php include_http_metas() ?>
     <?php include_metas() ?>
@@ -7,8 +7,35 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <?php include_stylesheets() ?>
     <?php include_javascripts() ?>
+    
+    <?php use_helper('I18N') ?>
   </head>
   <body>
-    <?php echo $sf_content ?>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="<?php echo url_for("document/index") ?>"><?php echo sfConfig::get("app_project_name") ?></a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="<?php echo url_for("document/index") ?>"><?php echo __("Documents") ?></a></li>
+              <li><a href="<?php echo url_for("users/index") ?>"><?php echo __("Users") ?></a></li>
+              <li><a href="<?php echo url_for("groups/index") ?>"><?php echo __("User Groups") ?></a></li>
+              <li><a href="<?php echo url_for("document_type/index") ?>"><?php echo __("Document Types") ?></a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <?php echo $sf_content ?>
+    </div>
+    
   </body>
 </html>
