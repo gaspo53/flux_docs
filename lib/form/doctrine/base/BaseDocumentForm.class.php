@@ -22,6 +22,8 @@ abstract class BaseDocumentForm extends BaseFormDoctrine
       'user_id'          => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('sfGuardUser'), 'add_empty' => false)),
       'group_id'         => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('sfGuardGroup'), 'add_empty' => false)),
       'document_type_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('DocumentType'), 'add_empty' => false)),
+      'created_at'       => new sfWidgetFormDateTime(),
+      'updated_at'       => new sfWidgetFormDateTime(),
     ));
 
     $this->setValidators(array(
@@ -32,6 +34,8 @@ abstract class BaseDocumentForm extends BaseFormDoctrine
       'user_id'          => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('sfGuardUser'))),
       'group_id'         => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('sfGuardGroup'))),
       'document_type_id' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('DocumentType'))),
+      'created_at'       => new sfValidatorDateTime(),
+      'updated_at'       => new sfValidatorDateTime(),
     ));
 
     $this->widgetSchema->setNameFormat('document[%s]');

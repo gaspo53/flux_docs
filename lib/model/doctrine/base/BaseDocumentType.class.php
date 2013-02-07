@@ -36,5 +36,9 @@ abstract class BaseDocumentType extends sfDoctrineRecord
         $this->hasMany('Document as Documents', array(
              'local' => 'id',
              'foreign' => 'document_type_id'));
+
+        $timestampable0 = new Doctrine_Template_Timestampable(array(
+             ));
+        $this->actAs($timestampable0);
     }
 }

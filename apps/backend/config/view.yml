@@ -12,9 +12,14 @@ default:
     #language:     en
     #robots:       index, follow
 
-  stylesheets:    [main.css, bootstrap.css, jquery-ui.css]
+  stylesheets:    [main.css, bootstrap.css, jquery-ui.css, ../sfTwitterBootstrapPlugin/css/style.css]
 
-  javascripts:    [jquery, jquery-ui]
-
+  javascripts:    
+    - jquery
+    - jquery-ui
+    - bootstrap
+    - ../sfTwitterBootstrapPlugin/js/jquery.tablesorter.min.js
+    - ../sfTwitterBootstrapPlugin/js/application.js
+    - ../sfTwitterBootstrapPlugin/js/bootbox/bootbox.min.js
   has_layout:     true
   layout:         layout

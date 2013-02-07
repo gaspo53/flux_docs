@@ -1,0 +1,1 @@
+<?php echo link_to("asdsa",public_path("uploads"). DIRECTORY_SEPARATOR . $document->getFilename()) ?>

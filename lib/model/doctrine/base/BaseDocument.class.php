@@ -89,5 +89,9 @@ abstract class BaseDocument extends sfDoctrineRecord
              'local' => 'document_type_id',
              'foreign' => 'id',
              'onDelete' => 'CASCADE'));
+
+        $timestampable0 = new Doctrine_Template_Timestampable(array(
+             ));
+        $this->actAs($timestampable0);
     }
 }

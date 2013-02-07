@@ -1,12 +1,12 @@
 DocumentType:
   tableName: document_type
-  actAs: [ TimeStampable:  ~ ]
+  actAs: [Timestampable]
   columns:
     name:  { type: varchar(255), notnull: true }
 
 Document:
   tableName: document
-  actAs: [ TimeStampable:  ~ ]
+  actAs: [Timestampable]
   columns:
     name:  { type: varchar(255), notnull: true }
     description:  { type: text, notnull: true }

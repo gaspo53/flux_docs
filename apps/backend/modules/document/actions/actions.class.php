@@ -22,8 +22,8 @@ class documentActions extends autoDocumentActions
     parent::executeDelete($request);
   }
   
-  public function executeShow(sfWebRequest $request){
-    
-  }
+//  public function executeShow(sfWebRequest $request){
+//    
+//  }
 
 }

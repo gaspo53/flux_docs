@@ -4,3 +4,10 @@
 # default values
 all:
   project_name: Flux IT Docs
+  sf_twitter_bootstrap:
+    site:                   Flux IT Docs
+    # si desea que se muestren enlaces a fieldsets en el título de las páginas de new/edit      
+    top_link_to_fieldset:   true
+    # si desea que se muestre también la paginación en la parte superior de la página del list     
+    display_top_pagination: true
+    use_icons_in_button:     true
