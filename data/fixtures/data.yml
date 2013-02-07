@@ -1,0 +1,25 @@
+DocumentType:
+  DocumentType_1:
+    name: 'Documento de Word'
+  DocumentType_2:
+    name: PDF
+sfGuardGroup:
+  sfGuardGroup_1:
+    name: 'Grupo A'
+    description: ''
+    created_at: '2013-02-06 20:39:45'
+    updated_at: '2013-02-06 20:39:45'
+sfGuardUser:
+  sfGuardUser_1:
+    first_name: null
+    last_name: null
+    email_address: gaspo@lala.com
+    username: gaspar
+    algorithm: sha1
+    salt: 29555011f9f4eeee67e8755fdb15373b
+    password: 3b271603cc85a477ccee062787f924a17ef6e764
+    is_active: true
+    is_super_admin: true
+    last_login: null
+    created_at: '2013-02-06 20:39:24'
+    updated_at: '2013-02-06 20:39:30'
