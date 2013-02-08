@@ -61,15 +61,16 @@ After doing that, you have to set-up a VirtualHost. As an example, you have to m
 And of course, enable it with:
 <pre>
   <code>
-      $ a2ensite flux_docs (if you named the VH 'flux_docs')
+      $# a2ensite flux_docs (if you named the VH 'flux_docs')
   </code>
 </pre>
 
 The PHP5 Apache2 Module and Rewrite:
 <pre>
   <code>
-      $ a2enmod php5
-      $ a2enmod rewrite
+      $# a2enmod php5
+      $# a2enmod rewrite
+      $# service apache2 restart
   </code>
 </pre>
 
@@ -81,9 +82,9 @@ the root of the project:
   <code> $ php check_configuration.php </code>
 </pre>
 
-Keep in mind that is recommended that all the item listed by the check script say OK.
+Keep in mind that is recommended that all the items listed by the check script say OK.
 
-After that, you have to edit config/databases.yml and set-up you DB configuration.
+After that, you have to edit config/databases.yml and set-up your DB configuration.
 
 Once you have done that, you have to run the following commands:
 <pre>
