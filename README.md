@@ -81,8 +81,21 @@ Once you have done that, you have to run the following commands:
     $ php symfony doctrine:data-load
     $ php symfony guard:create-user admin@example.com admin admin
     $ php symfony cc
+
+
+    Please make the <b>cache</b> and <b>log</b> folders, with write permissions.
   </code>
 </pre>
+
+After that, you have to set-up project permissions:
+<pre>
+  <code>
+    $ php symfony project:permission
+  </code>
+</pre>
+
+If for any reason, Symfony can't set permissions because of the lack of system permissions for the logged user, 
+please run that command as root.
   
 Usage
 -----
