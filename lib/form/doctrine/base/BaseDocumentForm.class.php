@@ -29,7 +29,7 @@ abstract class BaseDocumentForm extends BaseFormDoctrine
     $this->setValidators(array(
       'id'               => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
       'name'             => new sfValidatorPass(),
-      'description'      => new sfValidatorPass(),
+      'description'      => new sfValidatorPass(array('required' => false)),
       'filename'         => new sfValidatorPass(),
       'user_id'          => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('sfGuardUser'))),
       'group_id'         => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('sfGuardGroup'))),

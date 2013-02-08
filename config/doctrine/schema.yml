@@ -9,7 +9,7 @@ Document:
   actAs: [Timestampable]
   columns:
     name:  { type: varchar(255), notnull: true }
-    description:  { type: text, notnull: true }
+    description:  { type: text, notnull: false }
     filename: { type: varchar(255), notnull: true }
     user_id:   { type: integer, notnull: true }
     group_id:   { type: integer, notnull: true }    

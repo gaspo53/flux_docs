@@ -4,7 +4,7 @@
 prod:
   .settings:
     no_script_name:         false
-    logging_enabled:        false
+    logging_enabled:        true
 
 dev:
   .settings:
@@ -41,4 +41,7 @@ all:
 
     secure_module:          sfGuardAuth
     secure_action:          secure  
+  .actions:
+    error_404_module:       error
+    error_404_action:       404
     

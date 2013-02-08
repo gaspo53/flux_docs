@@ -19,7 +19,7 @@ class DocumentForm extends BaseDocumentForm {
 
     $this->setWidget('description', new sfWidgetFormTextarea(array()));
 
-    $this->setValidator('description', new sfValidatorString(array('required' => true)));
+    $this->setValidator('description', new sfValidatorString(array('required' => false)));
 
     $this->setValidator('name', new sfValidatorString(array('required' => true)));
 

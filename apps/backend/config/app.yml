@@ -6,7 +6,6 @@ all:
   project_name: Flux IT Docs
   author_site: http://ar.linkedin.com/in/grajoy/
   author_name: Gaspar Rajoy
-  max_upload_size:        3145728
 
   sf_twitter_bootstrap:
     site:                   Flux IT Docs

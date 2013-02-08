@@ -51,7 +51,7 @@ abstract class BaseDocument extends sfDoctrineRecord
              ));
         $this->hasColumn('description', 'text', null, array(
              'type' => 'text',
-             'notnull' => true,
+             'notnull' => false,
              ));
         $this->hasColumn('filename', 'varchar', 255, array(
              'type' => 'varchar',

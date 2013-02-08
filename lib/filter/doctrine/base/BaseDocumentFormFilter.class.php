@@ -14,7 +14,7 @@ abstract class BaseDocumentFormFilter extends BaseFormFilterDoctrine
   {
     $this->setWidgets(array(
       'name'             => new sfWidgetFormFilterInput(array('with_empty' => false)),
-      'description'      => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'description'      => new sfWidgetFormFilterInput(),
       'filename'         => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'user_id'          => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('sfGuardUser'), 'add_empty' => true)),
       'group_id'         => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('sfGuardGroup'), 'add_empty' => true)),
