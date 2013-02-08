@@ -19,13 +19,11 @@ class BasesfGuardFormSignin extends BaseForm
     $this->setWidgets(array(
       'username' => new sfWidgetFormInputText(),
       'password' => new sfWidgetFormInputPassword(array('type' => 'password')),
-      'remember' => new sfWidgetFormInputCheckbox(),
     ));
 
     $this->setValidators(array(
       'username' => new sfValidatorString(),
       'password' => new sfValidatorString(),
-      'remember' => new sfValidatorBoolean(),
     ));
 
     if (sfConfig::get('app_sf_guard_plugin_allow_login_with_email', true))

@@ -14,7 +14,7 @@ class sfGuardUserForm extends PluginsfGuardUserForm
   {
     unset($this['created_at'],$this['updated_at']);
     
-        $this->setWidget('password', new sfWidgetFormInputPassword(array()));
+    $this->setWidget('password', new sfWidgetFormInputPassword(array()));
 
   }
 }
