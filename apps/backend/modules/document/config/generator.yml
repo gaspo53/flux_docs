@@ -15,6 +15,7 @@ generator:
       actions: ~
       fields:
         sf_guard_user: {label: Owner}
+        sf_guard_group: {label: Group}
         created_at: {label: Upload date}
         name_path_link: {label: Name}
         user_id: {label: Owner}

@@ -13,4 +13,13 @@ require_once dirname(__FILE__).'/../lib/usersGeneratorHelper.class.php';
  */
 class usersActions extends autoUsersActions
 {
+ public function executeDelete(sfWebRequest $request) {
+   
+   try{
+    parent::executeDelete($request);
+   } catch (Doctrine_Connection_Exception $dce) {
+       $this->getUser()->setFlash('error', 'Cannot delete a user who has documents', false);
+       $this->forward('users','index'); 
+   }
+ }
 }

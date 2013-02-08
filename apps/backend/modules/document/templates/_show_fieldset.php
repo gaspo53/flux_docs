@@ -28,7 +28,7 @@
 </div>
 
 <div class="control-group sf_admin_row">
-  <label class="control-label"><?php echo __('Sf guard group', array(),'messages') ?></label>
+  <label class="control-label"><?php echo __('Group', array(),'messages') ?></label>
   <div class="controls">
     <div class="input-plain"><?php echo $document->getSfGuardGroup() ?></div>
   </div>

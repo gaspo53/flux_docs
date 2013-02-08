@@ -78,7 +78,7 @@ abstract class BaseDocument extends sfDoctrineRecord
         $this->hasOne('sfGuardUser', array(
              'local' => 'user_id',
              'foreign' => 'id',
-             'onDelete' => 'CASCADE'));
+             'onDelete' => 'RESTRICT'));
 
         $this->hasOne('sfGuardGroup', array(
              'local' => 'group_id',

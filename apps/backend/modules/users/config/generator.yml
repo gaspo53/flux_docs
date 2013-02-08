@@ -4,7 +4,7 @@ generator:
     model_class:           sfGuardUser
     theme:                 twitter
     non_verbose_templates: true
-    with_show:             false
+    with_show:             true
     singular:              ~
     plural:                ~
     route_prefix:          sf_guard_user
@@ -16,9 +16,16 @@ generator:
       fields:  ~
       list:
         display: [first_name, last_name, username, email_address]
+        object_actions:
+          _show: { action: _show }
+          _edit: ~
+          _delete: ~
       filter:
-        display: [first_name, last_name, username, email_address]
+        display: [first_name, last_name, username, email_address, groups_list]
       form:    ~
-      edit:    ~
+      edit:
+        display: [username, first_name, last_name, email_address, groups_list]
       new:
         display: [username, first_name, last_name, email_address, password, groups_list]
+      show:
+        display: [username, first_name, last_name, email_address]

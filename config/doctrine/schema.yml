@@ -15,7 +15,7 @@ Document:
     group_id:   { type: integer, notnull: true }    
     document_type_id: { type: integer, notnull: true }
   relations:
-    sfGuardUser: { onDelete: CASCADE, local: user_id, foreign: id, foreignAlias: UserDocuments }
+    sfGuardUser: { onDelete: RESTRICT, local: user_id, foreign: id, foreignAlias: UserDocuments }
     sfGuardGroup: { onDelete: CASCADE, local: group_id, foreign: id, foreignAlias: GroupDocuments }
     DocumentType: { onDelete: CASCADE, local: document_type_id, foreign: id, foreignAlias: Documents }
 

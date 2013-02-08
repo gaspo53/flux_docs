@@ -4,7 +4,7 @@ generator:
     model_class:           sfGuardGroup
     theme:                 twitter
     non_verbose_templates: true
-    with_show:             false
+    with_show:             true
     singular:              ~
     plural:                ~
     route_prefix:          sf_guard_group
@@ -14,10 +14,19 @@ generator:
     config:
       actions: ~
       fields:  ~
-      list:    ~
+      list:
+        display:  [name, description]
+        object_actions:
+          _show: { action: _show }
+          _edit: ~
+          _delete: ~
       filter:
         display:  [name]
       form:
         display:  [name, description]
-      edit:    ~
-      new:     ~
+      edit:
+        display:  [name, description]
+      new: ~
+      show:
+        display:  [name, description]
+        
