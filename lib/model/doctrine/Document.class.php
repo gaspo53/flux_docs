@@ -12,4 +12,11 @@
  */
 class Document extends BaseDocument
 {
+  public static function getDocumentById($id)
+  {
+    $table = Doctrine::getTable('Document');
+    $document = $table->find($id);
+    
+    return $document;
+  }
 }

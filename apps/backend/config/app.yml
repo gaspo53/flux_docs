@@ -4,6 +4,8 @@
 # default values
 all:
   project_name: Flux IT Docs
+  max_upload_size:        3145728
+
   sf_twitter_bootstrap:
     site:                   Flux IT Docs
     # si desea que se muestren enlaces a fieldsets en el título de las páginas de new/edit      
@@ -11,3 +13,6 @@ all:
     # si desea que se muestre también la paginación en la parte superior de la página del list     
     display_top_pagination: true
     use_icons_in_button:     true
+
+  sf_guard_plugin:
+    success_signin_url:     document/index    

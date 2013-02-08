@@ -22,8 +22,24 @@ class documentActions extends autoDocumentActions
     parent::executeDelete($request);
   }
   
-//  public function executeShow(sfWebRequest $request){
-//    
-//  }
+  public function executeDownload(sfWebRequest $request)
+  {
+    
+    $document = Document::getDocumentById($request->getParameter('id'));
+    
+    $filename = $document->getFilename();
+    
+    $file_path = sfConfig::get('sf_upload_dir') . DIRECTORY_SEPARATOR . $filename;
+    
+    $file_type = mime_content_type($file_path);
+    
+    $extension = explode(".",$filename);
+    
+    $final_name = $document->getName().".".$extension[1];
+    
+    header('Content-disposition: attachment; filename='.$final_name);
+    header('Content-type: '.$file_type);
+    readfile($file_path);
+  }
 
 }

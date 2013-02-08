@@ -23,10 +23,6 @@ class sfValidatedFileCustom extends sfValidatedFile{
     return $saved;
   }
   
-    public function generateFilename()
-    {
-      return $this->getOriginalName();
-    }
 }  
 
 ?>

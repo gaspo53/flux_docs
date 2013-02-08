@@ -28,16 +28,16 @@
               <li><a href="<?php echo url_for("groups/index") ?>"><?php echo __("User Groups") ?></a></li>
               <li><a href="<?php echo url_for("document_type/index") ?>"><?php echo __("Document Types") ?></a></li>
             </ul>
+            <?php if ($sf_user->isAuthenticated()): ?>
+                    <p class="logout pull-right">
+                      <?php echo link_to('<i class="icon-off icon-white"></i>', sfTwitterBootstrap::getProperty('logout_route'), array('title' => __('Logout'))) ?>
+                    </p>
+                    <p class="logged pull-right">
+                      <i class="icon-user icon-white"></i>&nbsp;
+                      <?php echo __('Logged in as') ?> <a href="#"><?php echo $sf_user->__toString(); ?></a>
+                    </p>
+            <?php endif; // if user is authenticated ?>
           </div><!--/.nav-collapse -->
-        <?php if ($sf_user->isAuthenticated()): ?>
-                <p class="logout pull-right">
-                  <?php echo link_to('<i class="icon-off icon-white"></i>', sfTwitterBootstrap::getProperty('logout_route'), array('title' => __('Logout'))) ?>
-                </p>
-                <p class="logged pull-right">
-                  <i class="icon-user icon-white"></i>&nbsp;
-                  <?php echo __('Logged in as') ?> <a href="<?php echo url_for('users/show?id='.$sf_user->id) ?>"><?php echo $sf_user->__toString(); ?></a>
-                </p>
-        <?php endif; // if user is authenticated ?>
         </div>
       </div>
     </div>

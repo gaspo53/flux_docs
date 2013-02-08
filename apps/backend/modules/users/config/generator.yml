@@ -15,6 +15,7 @@ generator:
       actions: ~
       fields:  ~
       list:
+        batch_actions: {}
         display: [first_name, last_name, username, email_address]
         object_actions:
           _show: { action: _show }
@@ -22,10 +23,11 @@ generator:
           _delete: ~
       filter:
         display: [first_name, last_name, username, email_address, groups_list]
-      form:    ~
+      form:
+        class: sfGuardUserAdminForm
       edit:
-        display: [username, first_name, last_name, email_address, groups_list]
+        display: [username, first_name, last_name, email_address, groups_list, is_active, is_super_admin]
       new:
-        display: [username, first_name, last_name, email_address, password, groups_list]
+        display: [username, first_name, last_name, email_address, password, password_again, groups_list, is_active, is_super_admin]
       show:
         display: [username, first_name, last_name, email_address]

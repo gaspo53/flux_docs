@@ -20,13 +20,14 @@ generator:
         name_path_link: {label: Name}
         user_id: {label: Owner}
       list:
+        batch_actions: {}
         display: [name, created_at, document_type, sf_guard_user ]
         object_actions:
           _show: { action: _show }
           _edit: ~
           _delete: ~
       filter:
-        display: [name, user_id, created_at]
+        display: [name, user_id, created_at, group_id]
       form:    ~
       edit:    ~
       new:     

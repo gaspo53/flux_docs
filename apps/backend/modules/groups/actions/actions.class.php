@@ -13,4 +13,14 @@ require_once dirname(__FILE__).'/../lib/groupsGeneratorHelper.class.php';
  */
 class groupsActions extends autoGroupsActions
 {
+ public function executeDelete(sfWebRequest $request) {
+   
+   try{
+    parent::executeDelete($request);
+   } catch (Doctrine_Connection_Exception $dce) {
+       $this->getUser()->setFlash('error', 'Cannot delete a user group that is used by documents', false);
+       $this->forward('groups','index'); 
+   }
+ }
+  
 }

@@ -1,22 +1,3 @@
-Document:
-  Document_9:
-    name: asdasdasdasdas
-    description: dasdasdasdasd
-    filename: bootstrap.zip
-    sfGuardUser: sfGuardUser_8
-    sfGuardGroup: sfGuardGroup_1
-    DocumentType: DocumentType_1
-    created_at: '2013-02-07 21:51:59'
-    updated_at: '2013-02-07 21:51:59'
-  Document_10:
-    name: ghjhghjhhmhjmhj
-    description: hjmhnhnhnhj
-    filename: foundation.custom.zip
-    sfGuardUser: sfGuardUser_8
-    sfGuardGroup: sfGuardGroup_1
-    DocumentType: DocumentType_2
-    created_at: '2013-02-07 21:52:11'
-    updated_at: '2013-02-07 21:52:11'
 DocumentType:
   DocumentType_1:
     name: Público
@@ -30,47 +11,55 @@ DocumentType:
     name: Draft
     created_at: '2013-02-07 18:51:07'
     updated_at: '2013-02-07 18:51:07'
-sfGuardGroup:
-  sfGuardGroup_1:
-    name: 'Grupo A'
-    description: ''
-    created_at: '2013-02-06 20:39:45'
-    updated_at: '2013-02-06 20:39:45'
 sfGuardUser:
-  sfGuardUser_5:
-    first_name: Gaspar
-    last_name: Rajoy
-    email_address: gasposadasd@lala.com
-    username: pedro
-    algorithm: ''
-    salt: ''
-    password: cea0570e7d3f8b3bb0de442aba09c9e9e588fe21
-    is_active: false
+  sfGuardUser_11:
+    first_name: null
+    last_name: null
+    email_address: ggg@sss.com
+    username: gaspar
+    algorithm: sha1
+    salt: f6ff7fc355086a9374fd0a28dd270c3f
+    password: 754df55739c7f8efd91251ddabfe86f7001b8a3c
+    is_active: true
     is_super_admin: false
-    last_login: null
-    created_at: '2013-02-07 21:05:45'
-    updated_at: '2013-02-07 21:38:02'
-  sfGuardUser_8:
-    first_name: TEST
-    last_name: TEST
-    email_address: sdfsdf@asdsdf.com
-    username: test
-    algorithm: ''
-    salt: ''
-    password: e7128c9a6d41eb3fc8590641f8d66179029a577a
-    is_active: false
-    is_super_admin: false
-    last_login: null
-    created_at: '2013-02-07 21:51:42'
-    updated_at: '2013-02-07 21:51:42'
+    last_login: '2013-02-08 10:58:02'
+    created_at: '2013-02-08 10:42:20'
+    updated_at: '2013-02-08 10:58:02'
+  sfGuardUser_17:
+    first_name: fer
+    last_name: fer
+    email_address: ferfer@efsdfsd.com
+    username: fer
+    algorithm: sha1
+    salt: 8a5cf902aec4233abd1298f468b64e3b
+    password: 39224d7bc5988836e9b0e38555e028eb941c1ae5
+    is_active: true
+    is_super_admin: true
+    last_login: '2013-02-08 11:51:32'
+    created_at: '2013-02-08 10:58:20'
+    updated_at: '2013-02-08 11:51:32'
+  sfGuardUser_18:
+    first_name: loco
+    last_name: loco
+    email_address: loco@loco.com
+    username: loco
+    algorithm: sha1
+    salt: b2b8a661538ce7454ca1d818bc82523a
+    password: db8beeb138aeb0a5f8230bbed30d4023dd3caf90
+    is_active: true
+    is_super_admin: true
+    last_login: '2013-02-08 11:03:14'
+    created_at: '2013-02-08 11:00:02'
+    updated_at: '2013-02-08 11:03:14'
+sfGuardGroup:
+  sfGuardGroup_3:
+    name: 'Grupo A'
+    description: asasdsadas
+    created_at: '2013-02-08 11:55:28'
+    updated_at: '2013-02-08 11:55:28'
 sfGuardUserGroup:
-  sfGuardUserGroup_5_1:
-    User: sfGuardUser_5
-    Group: sfGuardGroup_1
-    created_at: '2013-02-07 21:39:59'
-    updated_at: '2013-02-07 21:39:59'
-  sfGuardUserGroup_8_1:
-    User: sfGuardUser_8
-    Group: sfGuardGroup_1
-    created_at: '2013-02-07 21:51:42'
-    updated_at: '2013-02-07 21:51:42'
+  sfGuardUserGroup_18_3:
+    User: sfGuardUser_18
+    Group: sfGuardGroup_3
+    created_at: '2013-02-08 11:55:34'
+    updated_at: '2013-02-08 11:55:34'

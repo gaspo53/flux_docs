@@ -28,7 +28,7 @@ class DocumentForm extends BaseDocumentForm {
         'file_src'  => '/uploads/'.$this->getObject()->getFileName(),
         'with_delete' => false,
         'edit_mode' => true,
-         'template'  => ((!$this->isNew()) && (trim($this->getObject()->getFileName()) != '')) ? '<div>%file%</div><div>%input%</div>' : '<div>%input%</div>',
+        'template'  => ((!$this->isNew()) && (trim($this->getObject()->getFileName()) != '')) ? '<div>%file%</div><div>%input%</div>' : '<div>%input%</div>',
       ));
 
     $this->validatorSchema['filename'] = new sfValidatorFile(array(
@@ -38,7 +38,7 @@ class DocumentForm extends BaseDocumentForm {
       'validated_file_class' => 'sfValidatedFileCustom',
      ),
       array(
-        'max_size' => 'Archivo demasiado grande (Máximo 3MB)',
+        'max_size' => 'File too big (Max 3MB)',
       ));
  }
 

@@ -22,4 +22,5 @@ class usersActions extends autoUsersActions
        $this->forward('users','index'); 
    }
  }
+  
 }

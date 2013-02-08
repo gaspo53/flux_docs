@@ -83,12 +83,12 @@ abstract class BaseDocument extends sfDoctrineRecord
         $this->hasOne('sfGuardGroup', array(
              'local' => 'group_id',
              'foreign' => 'id',
-             'onDelete' => 'CASCADE'));
+             'onDelete' => 'RESTRICT'));
 
         $this->hasOne('DocumentType', array(
              'local' => 'document_type_id',
              'foreign' => 'id',
-             'onDelete' => 'CASCADE'));
+             'onDelete' => 'RESTRICT'));
 
         $timestampable0 = new Doctrine_Template_Timestampable(array(
              ));
