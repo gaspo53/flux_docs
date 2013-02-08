@@ -65,6 +65,15 @@ And of course, enable it with:
   </code>
 </pre>
 
+The PHP5 Apache2 Module and Rewrite:
+<pre>
+  <code>
+      $ a2enmod php5
+      $ a2enmod rewrite
+  </code>
+</pre>
+
+
 This is a PHP Symfony 1.4 App, so, you need to check you environment, with this script at
 the root of the projet:
 
