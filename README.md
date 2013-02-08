@@ -61,7 +61,7 @@ After doing that, you have to set-up a VirtualHost. As an example, you have to m
 And of course, enable it with:
 <pre>
   <code>
-      $ a2ensite flux_docs (if you called the VH 'flux_docs')
+      $ a2ensite flux_docs (if you named the VH 'flux_docs')
   </code>
 </pre>
 
@@ -74,12 +74,14 @@ The PHP5 Apache2 Module and Rewrite:
 </pre>
 
 
-This is a PHP Symfony 1.4 App, so, you need to check you environment, with this script at
-the root of the projet:
+This is a PHP Symfony 1.4 App, so, you need to check your environment, with this script at
+the root of the project:
 
 <pre>
   <code> $ php check_configuration.php </code>
 </pre>
+
+Keep in mind that is recommended that all the item listed by the check script say OK.
 
 After that, you have to edit config/databases.yml and set-up you DB configuration.
 
