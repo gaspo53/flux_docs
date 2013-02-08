@@ -92,6 +92,11 @@ Once you have done that, you have to run the following commands:
     $ php symfony doctrine:build --all [y]
     $ php symfony doctrine:data-load
     $ php symfony guard:create-user admin@example.com admin admin
+    $ mkdir cache
+    $ mkdir log
+    $ chmod +w cache
+    $ chmod +w log
+
     $ php symfony cc
 
 
