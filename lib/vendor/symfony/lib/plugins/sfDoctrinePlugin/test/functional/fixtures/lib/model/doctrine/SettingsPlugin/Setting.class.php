@@ -7,7 +7,7 @@
  * 
  * @package    symfony12
  * @subpackage model
- * @author     Your name here
+ * @author     Gaspar Rajoy
  * @version    SVN: $Id: Setting.class.php 28974 2010-04-04 22:59:54Z Kris.Wallsmith $
  */
 class Setting extends PluginSetting

@@ -7,7 +7,7 @@
  * 
  * @package    symfony12
  * @subpackage model
- * @author     Your name here
+ * @author     Gaspar Rajoy
  * @version    SVN: $Id: Builder.php 6716 2009-11-12 19:26:28Z jwage $
  */
 class FormGeneratorTest3 extends BaseFormGeneratorTest3

@@ -11,3 +11,10 @@ DocumentType:
     name: Draft
     created_at: '2013-02-07 18:51:07'
     updated_at: '2013-02-07 18:51:07'
+SfGuardGroup:
+  SfGuardGroup_1:
+    name: Usuarios raros
+    description: Este es un grupo muy raro
+    created_at: '2013-02-07 18:51:07'
+    updated_at: '2013-02-07 18:51:07'
+    

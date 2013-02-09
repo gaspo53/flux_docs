@@ -6,7 +6,7 @@
  * @package    ##PROJECT_NAME##
  * @subpackage <?php echo $this->getModuleName()."\n" ?>
  * @author     ##AUTHOR_NAME##
- * @version    SVN: $Id: actions.class.php 23810 2009-11-12 11:07:44Z Kris.Wallsmith $
+ * @version    1.0 2013-02-08 Gaspar.Rajoy $
  */
 class <?php echo $this->getGeneratedModuleName() ?>Actions extends <?php echo $this->getActionsBaseClass() ?>
 

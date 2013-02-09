@@ -7,7 +7,7 @@ require_once dirname(__FILE__).'/../lib/BasesfGuardRegisterActions.class.php';
  *
  * @package    guard
  * @subpackage sfGuardRegister
- * @author     Your name here
+ * @author     Gaspar Rajoy
  * @version    SVN: $Id: actions.class.php 12479 2008-10-31 10:54:40Z jwage $
  */
 class sfGuardRegisterActions extends BasesfGuardRegisterActions

@@ -1,16 +1,10 @@
-# You can find more information about this file on the symfony website:
-# http://www.symfony-project.org/reference/1_4/en/13-View
-
 default:
   http_metas:
     content-type: text/html
 
   metas:
-    #title:        symfony project
-    #description:  symfony project
-    #keywords:     symfony, project
-    #language:     en
-    #robots:       index, follow
+    title:        Flux IT Docs
+    language:     en
 
   stylesheets:    [main.css, bootstrap.css, jquery-ui.css, ../sfTwitterBootstrapPlugin/css/style.css]
 
@@ -23,3 +17,5 @@ default:
     - ../sfTwitterBootstrapPlugin/js/bootbox/bootbox.min.js
   has_layout:     true
   layout:         layout
+signinSuccess:
+  stylesheets: [signin-fix]

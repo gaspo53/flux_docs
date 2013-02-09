@@ -7,7 +7,7 @@
  * 
  * @package    symfony12
  * @subpackage model
- * @author     Your name here
+ * @author     Gaspar Rajoy
  * @version    SVN: $Id: Builder.php 6820 2009-11-30 17:27:49Z jwage $
  */
 class ModelWithNumberInColumn extends BaseModelWithNumberInColumn

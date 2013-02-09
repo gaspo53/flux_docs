@@ -7,7 +7,7 @@
  * 
  * @package    symfony12
  * @subpackage model
- * @author     Your name here
+ * @author     Gaspar Rajoy
  * @version    SVN: $Id: ModelFromLinkedSchema.class.php 24970 2009-12-05 14:28:15Z Kris.Wallsmith $
  */
 class ModelFromLinkedSchema extends BaseModelFromLinkedSchema

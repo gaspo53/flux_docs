@@ -4,11 +4,15 @@
     <?php include_http_metas() ?>
     <?php include_metas() ?>
     <?php include_title() ?>
-    <link rel="shortcut icon" href="/favicon.ico" />
     <?php include_stylesheets() ?>
     <?php include_javascripts() ?>
     
     <?php use_helper('I18N') ?>
+    
+    <meta name="author" content="<?php echo sfConfig::get("app_author_name") ?>">
+
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+    
   </head>
   <body>
 
@@ -37,7 +41,7 @@
                       <?php echo __('Logged in as') ?> <a href="#"><?php echo $sf_user->__toString(); ?></a>
                     </p>
             <?php endif; // if user is authenticated ?>
-          </div><!--/.nav-collapse -->
+          </div>
         </div>
       </div>
     </div>

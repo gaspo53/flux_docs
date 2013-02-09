@@ -7,7 +7,7 @@
  * 
  * @package    symfony12
  * @subpackage model
- * @author     Your name here
+ * @author     Gaspar Rajoy
  * @version    SVN: $Id: Attachment.class.php 24068 2009-11-17 06:39:35Z Kris.Wallsmith $
  */
 class Attachment extends BaseAttachment

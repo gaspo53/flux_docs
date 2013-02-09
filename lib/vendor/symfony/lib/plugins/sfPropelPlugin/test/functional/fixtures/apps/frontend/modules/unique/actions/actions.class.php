@@ -5,7 +5,7 @@
  *
  * @package    test
  * @subpackage unique
- * @author     Your name here
+ * @author     Gaspar Rajoy
  * @version    SVN: $Id: actions.class.php 16987 2009-04-04 14:16:46Z fabien $
  */
 class uniqueActions extends sfActions
