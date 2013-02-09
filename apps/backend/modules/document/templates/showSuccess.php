@@ -4,11 +4,11 @@
 <div id="sf_admin_container">
 
   <h2 >
-    <?php if(true == sfTwitterBootstrap::getProperty('top_link_to_fieldset')): ?>
+    <?php if (true == sfTwitterBootstrap::getProperty('top_link_to_fieldset')): ?>
       <?php foreach ($configuration->getFormFields($form, 'show') as $fieldset => $fields): ?>
         <?php if ('NONE' != $fieldset): ?>
           <?php $fieldset_name = __($fieldset, array(), 'messages') ?>
-            <small>- <a class="link-to-fieldset" href="#<?php echo preg_replace('/[^a-z0-9_]/', '_', strtolower($fieldset)) ?>"><?php echo $fieldset_name ?></a></small>
+          <small>- <a class="link-to-fieldset" href="#<?php echo preg_replace('/[^a-z0-9_]/', '_', strtolower($fieldset)) ?>"><?php echo $fieldset_name ?></a></small>
         <?php endif; ?>
       <?php endforeach; ?>
     <?php endif; ?>

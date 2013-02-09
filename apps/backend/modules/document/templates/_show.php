@@ -3,7 +3,7 @@
 
 <div class="sf_admin_show form-horizontal">
 
-  
+
   <?php foreach ($configuration->getFormFields($form, 'show') as $fieldset => $fields): ?>
 
     <?php if (true == sfTwitterBootstrap::getProperty('top_link_to_fieldset') && 'NONE' != $fieldset): ?>
@@ -20,4 +20,4 @@
     </fieldset>
   <?php endforeach; ?>
 
-  </div>
+</div>
