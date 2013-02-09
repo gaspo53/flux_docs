@@ -19,6 +19,7 @@ As it is a Web Application, you need to have installed at least this packages:
       $ php5-cli
       $ php-pear
       $ libapache2-mod-php5
+      $ php5-mysqlnd 
       $ git-core (for clonning the repository)
    </code>
 </pre>
