@@ -130,7 +130,8 @@ Usage
 
 That's all.
 
-If you are a developer, the best way is to navigate the site with the prefix backend_dev.php; but it is optional.
+If you are a developer, the best way is to navigate the site with the prefix backend_dev.php; but you won't see any custom
+error page.
 
 If you have edited your /etc/hosts file with the line above, you can start to browse the app at this [address]
 
