@@ -37,7 +37,7 @@ After that, it is recommended that you edit your /etc/hosts file and put this li
    </code>
 </pre>
 
-After doing that, you have to set-up a VirtualHost. As an example, you have to make one like this:
+Now, you have to set-up a VirtualHost. As an example, you have to make one like this:
 <pre>
   <code>
       &lt;virtualhost *:80&gt;
@@ -87,7 +87,7 @@ Keep in mind that is recommended that all the items listed by the check script s
 
 After that, you have to edit config/databases.yml and set-up your DB configuration.
 
-Once you have done that, you have to run the following commands:
+Once you have done that, run the following commands:
 <pre>
   <code>
     $ php symfony doctrine:build --all [y]
@@ -105,7 +105,7 @@ Once you have done that, you have to run the following commands:
   </code>
 </pre>
 
-After that, you have to set-up project permissions:
+Set-up project permissions:
 <pre>
   <code>
     $ php symfony project:permission
