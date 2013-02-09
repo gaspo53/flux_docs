@@ -114,6 +114,16 @@ Set-up project permissions:
 
 If for any reason, Symfony can't set permissions because of the lack of system privileges for the logged user, 
 please run that command as root.
+
+Also, if Apache2 is always showing the default "It's works" page, and you are not expert setting up a WebServer, you should
+disable the 'default' site:
+
+<pre>
+  <code>
+     $ a2dissite default
+     $ service apache2 restart
+  </code>
+</pre>
   
 Usage
 -----
