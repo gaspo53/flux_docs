@@ -112,7 +112,7 @@ Set-up project permissions:
   </code>
 </pre>
 
-If for any reason, Symfony can't set permissions because of the lack of system permissions for the logged user, 
+If for any reason, Symfony can't set permissions because of the lack of system privileges for the logged user, 
 please run that command as root.
   
 Usage
