@@ -24,7 +24,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="<?php echo url_for("document/index") ?>"><?php echo sfConfig::get("app_project_name") ?></a>
+          <a class="brand" href="<?php echo url_for("default/index") ?>"><?php echo sfConfig::get("app_project_name") ?></a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li><a href="<?php echo url_for("document/index") ?>"><?php echo __("Documents") ?></a></li>

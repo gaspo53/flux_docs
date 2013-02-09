@@ -12,4 +12,4 @@ all:
     use_icons_in_button:     true
 
   sf_guard_plugin:
-    success_signin_url:     document/index    
+    success_signin_url:     default/index    
